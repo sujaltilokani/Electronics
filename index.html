@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RK Electronics</title>
+    <link rel="icon" href="images\20240607_195405_0000.png" type="image/x-icon">
+    <style type="text/css">
+        *{
+            background-color: lightpink;
+            text-decoration: none;
+            user-select: none;
+        }
+        .navbar{
+            
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            padding-left: 15px;
+            padding-right: 15px;
+            background: rgb(178, 65, 87);
+        }
+        .navdiv{
+            background: rgb(178, 65, 87);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .logo img{
+            
+            width: 110px;
+             margin-top: 0px;
+             margin-bottom: 0px;
+             margin-left: 0px;
+             margin-right: 1px;
+            padding: 0px;
+        }
+        .logo1{
+            color: rgb(178, 65, 87);
+            font-size: 35px;
+            font-weight: 600;
+            color: blanchedalmond;
+        }
+        .ul{
+            background: rgb(178, 65, 87);
+        }
+        .li{
+            background: rgb(178, 65, 87);
+            list-style: none;
+            display: inline-block;
+            padding: 2px;
+            margin: 10px;
+        }
+        .li a{
+            background: rgb(178, 65, 87);
+            color: whitesmoke;
+            font-size: 25px;
+            font-weight: bold;
+            margin-right: 25px;
+        }
+        .li a:hover{
+           
+            color: rgb(0, 1, 1);
+            
+        }
+        #a{
+                background: rgb(178, 65, 87);
+        }
+        
+        
+        .dropdown{display: none;}
+        ul li:hover .dropdown{
+            font-size: 20px;
+            display: block;
+            position: absolute;
+            margin-left: -0.95cm;
+            margin-right: 0.40cm;
+        }
+        .ul li{
+            background: rgb(178, 65, 87);
+        }
+        .dropdown ul li{
+            color: antiquewhite;
+            background-color: black;
+            display: block;
+            margin:0%;
+            padding:0%;
+        }
+        
+.h2 {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 40px;
+    font-family: sans-serif;
+}
+
+.slider {
+    display: flex;
+    height: 80%;
+    width: 100%;
+    margin: 5% auto 0;
+    box-sizing: border-box !important;
+}
+
+.imagebox {
+    margin: 0 1%;
+    flex-grow: 1;
+    flex-basis: 0;
+    transition: 1s;
+}
+
+.imagebox img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 1s;
+    object-fit: cover;
+}
+
+.imagebox:hover {
+    width: 320px;
+    height: 525px;
+    transition: 1s;
+}
+
+.imagebox:hover, .active {
+    flex-basis: 50%;
+}
+
+.slider:hover .active {
+    flex-basis: 0;
+}
+
+@media screen and (min-width: 300px) and (max-width: 800px) {
+    .slider {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+    }
+
+    .imagebox {
+        width: 250px;
+        height: 200px;
+        margin: 30px 0px;
+    }
+
+    .imagebox:hover {
+        width: 320px;
+        height: 250px;
+    }
+
+    .imagebox:hover img {
+        width: 320px;
+        height: 250px;
+        flex-basis: 100%;
+    }
+
+    .imagebox img {
+        width: 250px;
+        height: 200px;
+    }
+}     
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navdiv">
+            <div class="logo"><img src="images\1000039962-removebg-preview.png"></div>
+            <div class="logo1"><a href="#">Radha_Krishna</div>
+            <ul>
+            <li class="li"><a href="#">Home</a></li>
+            <li class="li"><a href=""></a><a href="#">Orders</a>
+                <div class="dropdown">
+                    <ul class="ul">
+                        <li class="li">Camera</li>
+                        <li class="li">A.C.</li>
+                        <li class="li">T.V.</li>
+                    </ul>
+                </div>
+            </a></li>
+            <li class="li"><a href=""></a><a href="#">Contact us</a></li>
+            </ul>
+        </div>
+    </nav>
+   <!---- <div class="container">
+        <div class="img-container">
+            <img src="images\banner.jpeg">
+            <img src="images\washing_machine.jpeg">
+            <img src="images\fridge.jpg">
+            <img src="istockphoto-1196974664-612x612.jpg">
+        </div>
+    -->
+   
+
+    <div class="slider">
+        <div class="imagebox">
+            <img src="https://images.unsplash.com/photo-1595935736128-db1f0a261263?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+        </div>
+        <div class="imagebox">
+            <img src="https://images.unsplash.com/photo-1603618090561-412154b4bd1b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+        </div>
+        <div class="imagebox">
+            <img src="https://images.unsplash.com/photo-1626806819282-2c1dc01a5e0c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+        </div>
+        <div class="imagebox">
+<img src="https://images.unsplash.com/photo-1495121553079-4c61bcce1894?q=80&w=1881&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+         </div>
+        <div class="imagebox">
+            <img src="https://images.unsplash.com/photo-1587614382346-4ec70e388b28?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+        </div>
+    </div>
+</body>
+</html>
+</body>
+</html>
